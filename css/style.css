@@ -250,13 +250,3 @@ body{
     color: #2a8b9a;
     cursor: default;
 }
-
-
-
-path {
-    fill: transparent;
-  }
-  
-  text {
-    fill: #FF9800;
-  }
