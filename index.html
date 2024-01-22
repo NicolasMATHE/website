@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Nicolas Mathé</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="lib/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="lib/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+        <script src="lib/jquery-3.7.1.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css"></link>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+
+        <a href="#contactContainer" style="text-decoration: none; color: #fff;">
+            <div id="contactButton" class="ms-3 mb-3 px-5 py-2 d-flex justify-content-center align-items-center rounded-3">
+                <h6 class="m-0 py-1">Contactez-moi !</h6>
+            </div>
+        </a>
+
+        <div class="custom-section">
+            
+            <svg viewBox="0 0 500 500">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="500">
+                    <textPath xlink:href="#curve">
+                        Dangerous Curves Ahead
+                    </textPath>
+                </text>
+            </svg>
+
+            <div class="custom-section" data-aos="zoom-in">
+                <div id="titleContainer" class="col-12 text-center">
+                    <h1 id="bigTitle" class="title">Nicolas Mathé</h1>
+                </div>
+                <div id="denomination" class="col-12 text-center">
+                    <span class="subtitle">3D artist</span>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                <a href="#videoSection"><i class="fa-solid fa-angles-down fa-xl down-arrow"></i></a>
+            </div>
+        </div>
+
+        <div id="videoSection" class="custom-section">
+            <div id="videoContainer" class="col-12 d-flex justify-content-center" data-aos="zoom-in">
+                <span class="bg-black video" style="border: 5px solid red;"></span>
+            </div>
+            <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                <span style="font-size: 25px; font-family: 'Lato', sans-serif;">Mes projets</span>
+                <a href="#porjectSection"><i class="fa-solid fa-angles-down fa-xl down-arrow"></i></a>
+            </div>
+        </div>
+
+        <div id="porjectSection" class="d-flex flex-column align-items-center">
+            <div class="project-container my-5 py-5 px-5">
+                <div class="project-video-container" data-aos="zoom-in-right">
+                    <a href="https://www.youtube.com/watch?v=0nASOLj6kQM" target="_blank" title="Lien vers la vidéo du projet"><img src="img/croustyhead.png" alt="Image issue de la vidéo du projet" class="image-cadre"></a>
+                </div>
+                <div class="project-text-container">
+                    <h3 class="mb-4">CroustyHead</h3>
+                    <p>"Croustyhead" est un court métrage d'animation sur lequel j'ai travaillé avec l'aide de quatre étudiants en cinéma à l'Université Paul Valéry de Montpellier.</p>
+                    <p>Pour ce projet, j'ai eu la chance de travailler sur le montage et les décors. Nous avons créé chaque détail à la main, du plus petit accessoire aux décors complets, en utilisant une variété de techniques d'animation. Notre équipe était déterminée à créer une expérience visuelle captivante pour le public.</p>
+                </div>
+            </div>
+            <div class="project-container my-5 py-5 px-5">
+                <div class="project-text-container">
+                    <h3 class="mb-4">Les rescapés du Pilon </h3>
+                    <p>« Les rescapés du pilon » est une animation réalisé dans le cadre d'un TP de capture de mouvement et d'incrustation 3D. Il s'agit des travaux chaînés de plusieurs groupes d'étudiants ayant travaillé sur l'intégration de personnage virtuels dans des décors filmés sur le logiciel de 3D blender. </p>
+                    <p>Nous avons réalisé mon binôme et moi la séquence du pirate que nous avons modélisé, filmé et incrusté nous même. Ce projet m'a permis de m'initier à une nouvelle technique d'animation.</p>
+                </div>
+                <div class="project-video-container" data-aos="zoom-in-left">
+                    <a href="https://www.youtube.com/watch?v=1M0sT4di7H4" target="_blank" title="Lien vers la vidéo du projet"><img src="img/pirate.png" alt="Image issue de la vidéo du projet" class="image-cadre"></a>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                <span style="font-size: 25px; font-family: 'Lato', sans-serif;">Mes modélisations 3D</span>
+                <a href="#modelisationSection"><i class="fa-solid fa-angles-down fa-xl down-arrow"></i></a>
+            </div>
+        </div>
+        
+        <div id="modelisationSection" class="d-flex flex-column align-items-center p-5">
+            <div class="container-beforeAfter mb-5" data-aos="zoom-in">
+                <div class="image-container">
+                    <img class="image-before slider-image img3D" src="img/donut-texture.png" alt="photo donut 3D with texture">
+                    <img class="image-after slider-image img3D" src="img/donut-without-texture.png" alt="photo donut 3D without texture">
+                </div>
+                <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider" />
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                        <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="container-beforeAfter" data-aos="zoom-in">
+                <div class="image-container">
+                    <img class="image-before slider-image img3D" src="img/vaisseau-texture.png" alt="photo donut 3D with texture">
+                    <img class="image-after slider-image img3D" src="img/vaisseau-without-texture.png" alt="photo donut 3D without texture">
+                </div>
+                <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider" />
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                        <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center" id="contactContainer">
+            <div class="col-6 d-flex flex-column align-items-center">
+                <h2>Contact</h2>
+                <div id="contactIcons" class="mt-3">
+                    <a class="rounded-circle p-4" href="mailto:nicolasmathe3@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a class="rounded-circle p-4" href="https://www.linkedin.com/in/nicolas-mathe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="footerEnd" class="footer mt-5">
+            <p style="width: 20%;"></p>
+            <p>© 2024 Nicolas Mathé. Tous droits réservés.</p>
+            <p style="width: 20%; text-align: right;" class="p-hidden">Website made by <a href="https://www.gauthier-maupas.com" target="_blank">Gauthier Maupas</a></p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/f958f767fe.js" crossorigin="anonymous"></script>
+        <script src="js/animation.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

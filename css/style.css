@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-title: 'Rubik Mono One';
+    --background-color: #062453;
+    --primary-color: #196e8d;
+    --second-color: #2a8b9a;
+    --third-color: #85a9a2;
+}
+
+body{
+    background: url(../img/test.png);
+    /*background-color: var(--background-color);*/
+    color: #fff;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.video {
+    width: 800px;
+    height: 500px;
+}
+
+#videoContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow {
+    height: 20px;
+    margin-top: 30px;
+    -webkit-animation: upDown .7s infinite alternate;
+    animation: upDown .7s infinite alternate;
+}
+
+.down-arrow {
+    text-decoration: none;
+    color: #fff;
+}
+
+@-webkit-keyframes upDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes upDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+#contactIcons a{
+    color: #fff;
+}
+
+#contactIcons i {
+    font-size: 40px;
+}
+
+.custom-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-video-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text-container {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-text-container h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+
+.project-text-container p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+.h-divider {
+    content: "";
+    width: 40%;
+    border-top: 2px solid --third-color;
+}
+
+#contactButton {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--second-color);
+}
+
+#contactButton a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+  
+.img3D {
+    display: block;
+    max-width: 100%;
+}
+
+.container-beforeAfter {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    --position: 50%;
+}
+
+.image-container {
+    max-width: 800px;
+    max-height: 90vh;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for Firefox */
+    width: 100%;
+    height: 100%;
+}
+
+.slider:focus-visible~.slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #fff;
+    /* z-index: 10; */
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider-button {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+
+
+
+.image-cadre {
+    border: 8px solid #fff;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #2a8b9a;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+}
+
+.footer p {
+    padding: 0;
+    margin: 0;
+}
+
+.p-hidden {
+    color: #2a8b9a;
+    cursor: default;
+}
+
+.p-hidden a {
+    text-decoration: none;
+    color: #2a8b9a;
+    cursor: default;
+}
+
+
+
+path {
+    fill: transparent;
+  }
+  
+  text {
+    fill: #FF9800;
+  }
