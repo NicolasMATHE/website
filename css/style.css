@@ -282,4 +282,8 @@ body{
     .project-container h3 {
         font-size: 30px;
     }
+
+    #projectCroustyHead {
+        flex-direction: column-reverse;
+    }
 }
